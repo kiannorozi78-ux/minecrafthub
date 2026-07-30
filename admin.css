@@ -1,0 +1,138 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: tahoma;
+    background: #181818;
+    color: white;
+}
+
+
+header {
+    background: #4CAF50;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 5px solid #2E7D32;
+}
+
+
+.admin-panel {
+    display: flex;
+    min-height: calc(100vh - 100px);
+}
+
+
+/* منوی کناری */
+
+.menu {
+    width: 250px;
+    background: #222;
+    padding: 20px;
+}
+
+
+    .menu button {
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 15px;
+        background: #3a3a3a;
+        color: white;
+        border: 2px solid #4CAF50;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+
+        .menu button:hover {
+            background: #4CAF50;
+        }
+
+
+
+
+
+/* بخش محتوا */
+
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+
+
+.box {
+    background: #292929;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #4CAF50;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+
+input,
+textarea,
+select {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background: #111;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 8px;
+}
+
+
+
+textarea {
+    height: 150px;
+}
+
+
+
+.box button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+    .box button:hover {
+        background: #66BB6A;
+    }
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.back-btn {
+    text-decoration: none;
+    color: white;
+    background: #2E7D32;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 2px solid #1B5E20;
+    font-weight: bold;
+    transition: .3s;
+}
+
+
+    .back-btn:hover {
+        background: #66BB6A;
+        transform: scale(1.05);
+    }

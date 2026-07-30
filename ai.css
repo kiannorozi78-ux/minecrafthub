@@ -1,0 +1,114 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: tahoma;
+    background: #101820;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* جعبه اصلی چت */
+
+.chat {
+    width: 450px;
+    background: #1b1b1b;
+    border: 3px solid #1565C0;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: inset 0 0 20px #0D47A1, 0 10px 30px #000;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    color: #42A5F5;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px #000;
+}
+
+
+
+/* جواب AI */
+
+#answer {
+    background: #252525;
+    min-height: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #1565C0;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+
+
+
+/* کادر سوال */
+
+#question {
+    width: 100%;
+    padding: 15px;
+    background: #111;
+    color: white;
+    border: 2px solid #1976D2;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+
+
+
+
+/* دکمه ارسال */
+
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    background: linear-gradient( 180deg, #42A5F5, #1565C0 );
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border: 3px solid #0D47A1;
+    border-radius: 8px;
+    cursor: pointer;
+    text-shadow: 2px 2px #000;
+    box-shadow: inset 0 3px rgba(255,255,255,.3), 0 4px #082567;
+}
+
+
+
+
+    button:hover {
+        background: linear-gradient( 180deg, #64B5F6, #1976D2 );
+    }
+
+
+
+    button:active {
+        transform: translateY(3px);
+    }
+
+
+
+/* موبایل */
+
+@media(max-width:600px) {
+
+    .chat {
+        width: 90%;
+    }
+}

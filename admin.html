@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>پنل مدیریت</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+
+
+<body>
+
+
+    <header>
+
+        <div class="admin-header">
+
+            <a href="index.html" class="back-btn">
+                ⬅️ بازگشت به سایت
+            </a>
+
+            <h1>⚙️ پنل مدیریت سایت</h1>
+
+        </div>
+
+    </header>
+
+
+
+    <div class="admin-panel">
+
+
+        <aside class="menu">
+
+            <button onclick="openSection('dashboard')">
+                📊 داشبورد
+            </button>
+
+
+            <button onclick="openSection('add')">
+                📝 افزودن پست
+            </button>
+
+
+            <button onclick="openSection('edit')">
+                ✏️ ویرایش پست
+            </button>
+
+
+            <button onclick="openSection('delete')">
+                🗑 حذف پست
+            </button>
+
+
+            <button onclick="openSection('media')">
+                🖼 مدیریت عکس و ویدیو
+            </button>
+
+
+            <button onclick="openSection('texture')">
+                🎨 تکسچرها
+            </button>
+
+
+            <button onclick="openSection('category')">
+                📂 دسته‌بندی‌ها
+            </button>
+
+
+            <button onclick="openSection('users')">
+                👤 کاربران
+            </button>
+
+
+            <button onclick="openSection('settings')">
+                ⚙️ تنظیمات
+            </button>
+
+
+        </aside>
+
+
+
+
+
+        <main class="content">
+
+
+
+            <section id="dashboard" class="box">
+
+                <h2>📊 داشبورد</h2>
+
+                <p>
+                    تعداد پست‌ها:
+                    <span id="postCount">
+                        0
+                    </span>
+                </p>
+
+                <p>
+                    وضعیت سایت: فعال ✅
+                </p>
+
+            </section>
+
+
+
+
+
+            <section id="add" class="box hidden">
+
+                <h2>📝 افزودن پست</h2>
+
+
+                <input placeholder="عنوان">
+
+
+                <input placeholder="نسخه ماینکرفت">
+
+
+                <select>
+
+                    <option>مود</option>
+                    <option>مپ</option>
+                    <option>شیدر</option>
+                    <option>تکسچر</option>
+                    <option>آموزش</option>
+
+                </select>
+
+
+                <input placeholder="لینک عکس">
+
+
+                <input placeholder="لینک دانلود">
+
+
+<textarea placeholder="توضیحات"></textarea>
+
+
+                <button>
+                    انتشار پست
+                </button>
+
+
+            </section>
+
+
+
+
+
+
+            <section id="edit" class="box hidden">
+
+                <h2>✏️ ویرایش پست</h2>
+
+                <p>
+                    اینجا لیست پست‌ها برای ویرایش نمایش داده می‌شود.
+                </p>
+
+            </section>
+
+
+
+
+
+
+            <section id="delete" class="box hidden">
+
+                <h2>🗑 حذف پست</h2>
+
+                <p>
+                    انتخاب پست برای حذف
+                </p>
+
+            </section>
+
+
+
+
+
+
+            <section id="media" class="box hidden">
+
+                <h2>🖼 مدیریت فایل‌ها</h2>
+
+                <input type="file">
+
+
+                <input type="file" accept="video/*">
+
+
+            </section>
+
+
+
+
+
+
+            <section id="texture" class="box hidden">
+
+                <h2>🎨 تغییر تکسچر سایت</h2>
+
+                <p>
+                    تکسچر دکمه‌ها و بخش‌ها
+                </p>
+
+
+                <input type="file">
+
+
+            </section>
+
+
+
+
+
+
+            <section id="category" class="box hidden">
+
+                <h2>📂 دسته‌بندی‌ها</h2>
+
+
+                <button>
+                    افزودن دسته جدید
+                </button>
+
+
+            </section>
+
+
+
+
+
+
+            <section id="users" class="box hidden">
+
+                <h2>👤 کاربران</h2>
+
+                <p>
+                    مدیریت کاربران در آینده
+                </p>
+
+
+            </section>
+
+
+
+
+
+
+            <section id="settings" class="box hidden">
+
+                <h2>⚙️ تنظیمات</h2>
+
+
+                <input placeholder="نام سایت">
+
+
+                <button>
+                    ذخیره تنظیمات
+                </button>
+
+
+            </section>
+
+
+
+
+        </main>
+
+
+    </div>
+
+
+
+
+    <script src="admin.js"></script>
+
+
+</body>
+
+</html>
